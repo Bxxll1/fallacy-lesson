@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="css/clock-style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <h1>🌍 World Clock</h1>
+        <p class="subtitle">Current Time in Different Time Zones</p>
+        
+        <div class="clocks-grid">
+            <!-- Bangkok / Asia/Bangkok -->
+            <div class="clock-card">
+                <div class="timezone-name">Bangkok</div>
+                <div class="timezone-code">(UTC+7)</div>
+                <div class="time" id="bangkok">00:00:00</div>
+                <div class="date" id="bangkok-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Tokyo / Asia/Tokyo -->
+            <div class="clock-card">
+                <div class="timezone-name">Tokyo</div>
+                <div class="timezone-code">(UTC+9)</div>
+                <div class="time" id="tokyo">00:00:00</div>
+                <div class="date" id="tokyo-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Singapore / Asia/Singapore -->
+            <div class="clock-card">
+                <div class="timezone-name">Singapore</div>
+                <div class="timezone-code">(UTC+8)</div>
+                <div class="time" id="singapore">00:00:00</div>
+                <div class="date" id="singapore-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Hong Kong / Asia/Hong_Kong -->
+            <div class="clock-card">
+                <div class="timezone-name">Hong Kong</div>
+                <div class="timezone-code">(UTC+8)</div>
+                <div class="time" id="hongkong">00:00:00</div>
+                <div class="date" id="hongkong-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- London / Europe/London -->
+            <div class="clock-card">
+                <div class="timezone-name">London</div>
+                <div class="timezone-code">(UTC+0/+1)</div>
+                <div class="time" id="london">00:00:00</div>
+                <div class="date" id="london-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- New York / America/New_York -->
+            <div class="clock-card">
+                <div class="timezone-name">New York</div>
+                <div class="timezone-code">(UTC-5/-4)</div>
+                <div class="time" id="newyork">00:00:00</div>
+                <div class="date" id="newyork-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Los Angeles / America/Los_Angeles -->
+            <div class="clock-card">
+                <div class="timezone-name">Los Angeles</div>
+                <div class="timezone-code">(UTC-8/-7)</div>
+                <div class="time" id="losangeles">00:00:00</div>
+                <div class="date" id="losangeles-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Sydney / Australia/Sydney -->
+            <div class="clock-card">
+                <div class="timezone-name">Sydney</div>
+                <div class="timezone-code">(UTC+10/+11)</div>
+                <div class="time" id="sydney">00:00:00</div>
+                <div class="date" id="sydney-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Dubai / Asia/Dubai -->
+            <div class="clock-card">
+                <div class="timezone-name">Dubai</div>
+                <div class="timezone-code">(UTC+4)</div>
+                <div class="time" id="dubai">00:00:00</div>
+                <div class="date" id="dubai-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Paris / Europe/Paris -->
+            <div class="clock-card">
+                <div class="timezone-name">Paris</div>
+                <div class="timezone-code">(UTC+1/+2)</div>
+                <div class="time" id="paris">00:00:00</div>
+                <div class="date" id="paris-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Toronto / America/Toronto -->
+            <div class="clock-card">
+                <div class="timezone-name">Toronto</div>
+                <div class="timezone-code">(UTC-5/-4)</div>
+                <div class="time" id="toronto">00:00:00</div>
+                <div class="date" id="toronto-date">Mon, Jan 01</div>
+            </div>
+
+            <!-- Mumbai / Asia/Kolkata -->
+            <div class="clock-card">
+                <div class="timezone-name">Mumbai</div>
+                <div class="timezone-code">(UTC+5:30)</div>
+                <div class="time" id="mumbai">00:00:00</div>
+                <div class="date" id="mumbai-date">Mon, Jan 01</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="toggle-24h" class="btn">Toggle 12/24 Hour</button>
+        </div>
+
+        <div class="info">
+            <p>Last updated: <span id="last-update">00:00:00</span></p>
+        </div>
+    </div>
+
+    <script src="js/clock.js"></script>
+</body>
+</html>
